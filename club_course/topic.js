@@ -1,4 +1,6 @@
-var topic = [];
+var topic = ["湖人 vs 勇士 ",
+            "暴龍 vs 騎士",
+            "灰狼 vs 金塊"];
 
 var startDate = new Date();
 
