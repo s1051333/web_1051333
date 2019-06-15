@@ -7,11 +7,11 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>BrianLih Practice Web</title>
+    <title>NBA</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="simple_rpg/style.css">
+    <link rel="stylesheet" href="youtube_player/style.css">
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
@@ -20,7 +20,7 @@
 
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="index.html">Journey</a>
+        <a class="navbar-brand" href="index.html">NBA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,22 +30,19 @@
               <a class="nav-link" href="about_me.html">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="random_select.html">RandomSelect</a>
+              <a class="nav-link" href="random.html">球員介紹</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="club_course.html">My Journey</a>
+              <a class="nav-link" href="course.html">賽程表</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="mind_quiz.html">MindQuiz </a>
+              <a class="nav-link" href="quiz.html">NBA小知識 </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="simple.html">小遊戲 </a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">SimpleRPG<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="youtube_player.html">YoutubePlayer</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
+              <a class="nav-link" href="#">NBA精華<span class="sr-only">(current)</span></a>
             </li>
           </ul>
           <form class="form-inline mt-2 mt-md-0">
@@ -56,14 +53,15 @@
       </nav>
     </header>
 
-    <main role="main">
+    <!--main body-->
+    <main role="main" align="center">
       <div class="container_marketing">
         <hr class="featurette-divider">
-            <h1>I want to go lower right corner</h1>
-            <div>
-                <canvas id="myCanvas" width="600" height="600"></canvas>
-                <p id="talkBox"></p>
-            </div>
+            <h1>NBA精華</h1>
+            <h2 id="vedio_name"></h2><!--play list name-->
+            <div id="player"></div><!--Youtube player-->
+            <br>
+            <input id="playButton" type="button" value="Play">
         <hr class="featurette-divider">
       </div><!-- /.container -->
       <!-- FOOTER -->
@@ -82,6 +80,8 @@
     <script src="dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="assets/js/vendor/holder.min.js"></script>
-    <script src="simple_rpg/main.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="youtube_player/playlist.js"></script>
+    <script src="youtube_player/main.js"></script>
   </body>
 </html>

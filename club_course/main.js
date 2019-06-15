@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#courseTable").append("<tr><th>場次</th><th>時間</th><th>賽程</th></tr>");
+    $("#courseTable").append("<tr><th>Number</th><th>Time</th><th>Destination</th></tr>");
     
     var topicCount = topic.length;
     
@@ -12,11 +12,11 @@ $(document).ready(function(){
     {
         if(topic[x]=="休賽")
         {
-            $("#courseTable").append("<tr><td class='event'>" + (x + 1) + "</td><td class='time'>" + (new Date(startDate.getTime() + x*3*dayUnit)).toLocaleDateString().slice(5) + "</td><td style='color: grey;'>" + topic[x] + "</td></tr>");
+            $("#courseTable").append("<tr><td class='event'>" + (x + 1) + "</td><td class='time'>" + (new Date(startDate.getTime() + x*7*dayUnit)).toLocaleDateString().slice(5) + "</td><td style='color: grey;'>" + topic[x] + "</td></tr>");
         }
         else
         {
-            $("#courseTable").append("<tr><td class='event'>" + (x + 1) + "</td><td class='time'>" + (new Date(startDate.getTime() + x*3*dayUnit)).toLocaleDateString().slice(5) + "</td><td style='font-weight: bold;'>" + topic[x] + "</td></tr>");
+            $("#courseTable").append("<tr><td class='event'>" + (x + 1) + "</td><td class='time'>" + (new Date(startDate.getTime() + x*7*dayUnit)).toLocaleDateString().slice(5) + "</td><td style='font-weight: bold;'>" + topic[x] + "</td></tr>");
         }
     }
     

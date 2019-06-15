@@ -11,7 +11,7 @@ function onYouTubeIframeAPIReady(){
             "autoplay":0,
             "controls":1,
             "start":playTime[currentPlay][0],
-            "end":playTime[currentPlay][1],
+            "end":playTime[currentPlay][50],
             "showinfo":1,
             "rel":0,
             "iv_load_policy":3
@@ -41,7 +41,7 @@ function onPlayerStateChange(event){
             player.loadVideoById({
                 "videoId":playList[currentPlay],
                 "startSeconds":playTime[currentPlay][0],
-                "endSeconds":playTime[currentPlay][1],
+                "endSeconds":playTime[currentPlay][50],
                 "suggestedQuality":"large"
             });
         }
@@ -51,7 +51,7 @@ function onPlayerStateChange(event){
             player.cueVideoById({
                 "videoId":playList[currentPlay],
                 "startSeconds":playTime[currentPlay][0],
-                "endSeconds":playTime[currentPlay][1],
+                "endSeconds":playTime[currentPlay][50],
                 "suggestedQuality":"large"
             });
         }      

@@ -1,17 +1,14 @@
-var pictures=[
-    "curry.jpg","kobe.jpg","james.png","kd.jpeg","ki.jpg"
-]
-
 $(document).ready(function() {
-    $("input").click(function()
+    $("#123").click(function()
     {
-        //$("H1").text("Hello");
-        //$("H1").text($("li:first").text());
-        var numberOfListItem = $("li").length;
-        var randomChildNumber = Math.floor(Math.random()*numberOfListItem);
+        var numbers_of_li = $("#choice li").length;
+        var random_list_number = Math.floor(Math.random()*numbers_of_li);
+        var image = ["curry.jpg","james.png", "kobe.jpg", "kd.jpeg", "ki.jpg"];
+        $("#place_image").attr("src", image[random_list_number]);
+        $("#place_image").width(700);
+        $("#place_image").height(500);
         
-        $("H1").text($("li").eq(randomChildNumber).text());
-        $("img").attr("src",pictures[randomChildNumber]);
         
+        $("#234").text($("#choice li").eq(random_list_number).text());
     });
 });

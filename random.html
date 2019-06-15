@@ -7,11 +7,11 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>BrianLih Practice Web</title>
+    <title>NBA</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="simple_rpg/style.css">
+    <link rel="stylesheet" href="RandomSelector/style.css">
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
@@ -20,7 +20,7 @@
 
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="index.html">Journey</a>
+        <a class="navbar-brand" href="index.html">NBA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,23 +29,20 @@
             <li class="nav-item">
               <a class="nav-link" href="about_me.html">About Me</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="random_select.html">RandomSelect</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="club_course.html">My Journey</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mind_quiz.html">MindQuiz </a>
-            </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">SimpleRPG<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">球員介紹<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="youtube_player.html">YoutubePlayer</a>
+              <a class="nav-link" href="course.html">賽程表</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
+              <a class="nav-link" href="quiz.html">NBA小知識</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="simple.html">小遊戲</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="youtube.html">NBA精華 </a>
             </li>
           </ul>
           <form class="form-inline mt-2 mt-md-0">
@@ -59,11 +56,16 @@
     <main role="main">
       <div class="container_marketing">
         <hr class="featurette-divider">
-            <h1>I want to go lower right corner</h1>
-            <div>
-                <canvas id="myCanvas" width="600" height="600"></canvas>
-                <p id="talkBox"></p>
-            </div>
+          <img id="place_image"  src="" alt=""/>
+            <h1 id="234">球員介紹</h1>
+              <input type="button" id="123" value="選擇">
+                <ul id="choice">
+                  <li>Stephen Curry</li>
+                  <li>LeBron James</li>
+                  <li>Kobe Bryant</li>
+                  <li>Kevin Durant</li>
+                  <li>Kyrie Irving</li>
+                </ul>
         <hr class="featurette-divider">
       </div><!-- /.container -->
       <!-- FOOTER -->
@@ -73,7 +75,8 @@
       </footer>
     </main>
 
-    <!-- Bootstrap core JavaScript
+      
+      <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -82,6 +85,6 @@
     <script src="dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="assets/js/vendor/holder.min.js"></script>
-    <script src="simple_rpg/main.js"></script>
+    <script src="RandomSelector/main.js"></script>
   </body>
 </html>
